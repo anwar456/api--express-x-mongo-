@@ -1,0 +1,29 @@
+GET http://localhost:5000/product
+
+###
+GET http://localhost:5000/product/643baa5e8ac9dacdb6ff98c8
+
+###
+POST http://localhost:5000/product
+Content-Type: application/json
+
+{
+    "nama": "Laptop Xiaomi",
+    "harga": 12000000,
+    "stock": 7,
+    "status": 1
+}
+
+###
+PATCH http://localhost:5000/product/643baa5e8ac9dacdb6ff98c8
+Content-Type: application/json
+
+{
+    "nama": "Laptop Acer",
+    "harga": 15000000,
+    "stock": 5,
+    "status": 1
+}
+
+###
+DELETE http://localhost:5000/product/643baca71b2100b7014effe8
